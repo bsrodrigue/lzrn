@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { View } from 'react-native'
 
+//TODO: Make padding configurable
 interface WrapViewProps {
   children?: ReactNode;
 }

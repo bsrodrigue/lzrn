@@ -1,18 +1,6 @@
 import { ReactNode } from "react";
-import { StyleSheet, View } from "react-native";
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "white",
-    paddingHorizontal: 20,
-  },
-
-  body: {
-    flex: 1,
-    marginVertical: 10,
-  },
-});
+import { ExpandingView } from "../ExpandingView";
+import { WrapView } from "../WrapView";
 
 type AuthFormProps = {
   children?: ReactNode;
@@ -21,10 +9,10 @@ type AuthFormProps = {
 export default function AuthForm({ children }: AuthFormProps) {
 
   return (
-    <View style={styles.container}>
-      <View style={styles.body}>
+    <ExpandingView>
+      <WrapView>
         {children}
-      </View>
-    </View>
+      </WrapView>
+    </ExpandingView>
   )
 }

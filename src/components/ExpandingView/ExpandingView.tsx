@@ -8,7 +8,7 @@ interface ExpandingViewProps {
 
 export default function ExpandingView({ children, style }: ExpandingViewProps) {
   return (
-    <View style={[{ flex: 1 }, style]}>
+    <View style={[{ flex: 1, backgroundColor: "white" }, style]}>
       {children}
     </View>
   );

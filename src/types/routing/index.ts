@@ -1,7 +1,4 @@
 export type RootStackParamList = {
-  NewComer: any;
-  Arrival: any;
-  Bet: any;
   Home: any;
   Welcome: any;
   Onboarding: any;
@@ -11,12 +8,12 @@ export type RootStackParamList = {
   SetupAccount: any;
   Discover: any;
   Main: any;
-  Workshop: any;
   Search: any;
   Settings: any;
   ChangeEmail: any;
   ChangePassword: any;
   ViewAccount: any;
+  Success: any;
   RegisterSuccess: {
     token: string;
   };
